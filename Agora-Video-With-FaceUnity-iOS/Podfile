@@ -16,5 +16,6 @@ target 'BeautifyExample' do
    pod 'AgoraRtcEngine_iOS'
    pod 'Masonry'
    pod 'SVProgressHUD'
+   pod 'LookinServer', :configurations => ['Debug']
 
 end

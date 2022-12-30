@@ -23,12 +23,16 @@ PODS:
   - AgoraRtcEngine_iOS/SuperResolution (3.7.0.3)
   - AgoraRtcEngine_iOS/VideoPreprocess (3.7.0.3)
   - AgoraRtcEngine_iOS/VirtualBackground (3.7.0.3)
+  - LookinServer (1.1.2):
+    - LookinServer/Core (= 1.1.2)
+  - LookinServer/Core (1.1.2)
   - Masonry (1.1.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - AGMCapturer_iOS
   - AgoraRtcEngine_iOS
+  - LookinServer
   - Masonry
   - SVProgressHUD
 
@@ -36,15 +40,17 @@ SPEC REPOS:
   trunk:
     - AGMCapturer_iOS
     - AgoraRtcEngine_iOS
+    - LookinServer
     - Masonry
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   AGMCapturer_iOS: db3e573afc0a6cd9f73dfc36b6ef4df7887f922a
   AgoraRtcEngine_iOS: 549bb3853d5afb18fabca4197786f39f31141da8
+  LookinServer: bb667a77f1ee594a8e91226e729dbe49f3401f5c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 7547425d3c718ed3ee5612a3cd2bc054b7d47ddb
+PODFILE CHECKSUM: 97ac40de8b61d3773b873c3836714c17f18f7b8a
 
 COCOAPODS: 1.11.3
