@@ -28,7 +28,7 @@
 		2DC7D61E2537246D00DA0A4B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC7D61D2537246D00DA0A4B /* CoreMotion.framework */; };
 		2DC7D6202537247900DA0A4B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC7D61F2537247900DA0A4B /* AudioToolbox.framework */; };
 		2DC7D6272537248600DA0A4B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC7D60A2537238B00DA0A4B /* libc++.tbd */; };
-		2DF48BEE2514912900575424 /* FUManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF48BED2514912900575424 /* FUManager.m */; };
+		2DF48BEE2514912900575424 /* FURenderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF48BED2514912900575424 /* FURenderManager.m */; };
 		2DFDCC872779ACFA005FD7A7 /* ai_face_recognizer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DFDCC762779ACF8005FD7A7 /* ai_face_recognizer.bundle */; };
 		2DFDCC882779ACFA005FD7A7 /* ai_hand_processor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DFDCC772779ACF8005FD7A7 /* ai_hand_processor.bundle */; };
 		2DFDCC892779ACFA005FD7A7 /* ai_face_processor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DFDCC782779ACF8005FD7A7 /* ai_face_processor.bundle */; };
@@ -161,8 +161,8 @@
 		2DC7D61B2537245400DA0A4B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		2DC7D61D2537246D00DA0A4B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		2DC7D61F2537247900DA0A4B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		2DF48BEC2514912900575424 /* FUManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUManager.h; sourceTree = "<group>"; };
-		2DF48BED2514912900575424 /* FUManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUManager.m; sourceTree = "<group>"; usesTabs = 0; };
+		2DF48BEC2514912900575424 /* FURenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FURenderManager.h; sourceTree = "<group>"; };
+		2DF48BED2514912900575424 /* FURenderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FURenderManager.m; sourceTree = "<group>"; usesTabs = 0; };
 		2DFDCC762779ACF8005FD7A7 /* ai_face_recognizer.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = ai_face_recognizer.bundle; sourceTree = "<group>"; };
 		2DFDCC772779ACF8005FD7A7 /* ai_hand_processor.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = ai_hand_processor.bundle; sourceTree = "<group>"; };
 		2DFDCC782779ACF8005FD7A7 /* ai_face_processor.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = ai_face_processor.bundle; sourceTree = "<group>"; };
@@ -436,8 +436,8 @@
 		E3583EA72711920A008E52A7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				2DF48BEC2514912900575424 /* FUManager.h */,
-				2DF48BED2514912900575424 /* FUManager.m */,
+				2DF48BEC2514912900575424 /* FURenderManager.h */,
+				2DF48BED2514912900575424 /* FURenderManager.m */,
 				E3583EA9271198AF008E52A7 /* FUDemoManager.h */,
 				E3583EA8271198AF008E52A7 /* FUDemoManager.m */,
 				E35B22C8253571FF00F50AC2 /* FUTestRecorder.h */,
@@ -807,7 +807,7 @@
 				03F8193524E004A7004F7F36 /* VideoProcessingManager.m in Sources */,
 				E3583EF8271198D2008E52A7 /* FUFilterModel.m in Sources */,
 				03F8196324E1371B004F7F36 /* KeyCenter.m in Sources */,
-				2DF48BEE2514912900575424 /* FUManager.m in Sources */,
+				2DF48BEE2514912900575424 /* FURenderManager.m in Sources */,
 				09C6666A24D7BC89001D7AE2 /* ViewController.m in Sources */,
 				E3583F1F271198D2008E52A7 /* FUFunctionView.m in Sources */,
 				09C6666424D7BC89001D7AE2 /* AppDelegate.m in Sources */,

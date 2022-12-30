@@ -20,13 +20,13 @@
 
 @end
 
-@interface FUManager : NSObject <VideoFilterDelegate>
+@interface FURenderManager : NSObject <VideoFilterDelegate>
 
 @property (nonatomic, weak) id<FUManagerProtocol>delegate;
 
 @property (nonatomic, assign, readonly) FUDevicePerformanceLevel devicePerformanceLevel;
 
-+ (FUManager *)shareManager;
++ (FURenderManager *)shareManager;
 
 /// 销毁全部道具
 - (void)destoryItems;

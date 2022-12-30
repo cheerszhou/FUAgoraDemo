@@ -73,7 +73,7 @@
     if (self) {
         NSAssert(controller != nil, @"目标控制器不能为空");
         
-        [FUManager shareManager].delegate = self;
+        [FURenderManager shareManager].delegate = self;
         
         self.targetController = controller;
         self.demoOriginY = originY;
@@ -87,7 +87,7 @@
         // 默认自定义脸型
         beauty.faceShape = 4;
         // 高性能设备设置去黑眼圈、去法令纹、大眼、嘴型最新效果
-        if ([FUManager shareManager].devicePerformanceLevel == FUDevicePerformanceLevelHigh) {
+        if ([FURenderManager shareManager].devicePerformanceLevel == FUDevicePerformanceLevelHigh) {
             [beauty addPropertyMode:FUBeautyPropertyMode2 forKey:FUModeKeyRemovePouchStrength];
             [beauty addPropertyMode:FUBeautyPropertyMode2 forKey:FUModeKeyRemoveNasolabialFoldsStrength];
             [beauty addPropertyMode:FUBeautyPropertyMode3 forKey:FUModeKeyEyeEnlarging];

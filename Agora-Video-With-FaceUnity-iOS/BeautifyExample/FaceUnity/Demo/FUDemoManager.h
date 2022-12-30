@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "FUDefines.h"
-#import "FUManager.h"
+#import "FURenderManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

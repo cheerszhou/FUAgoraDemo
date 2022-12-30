@@ -1,32 +1,32 @@
 //
-//  FUManager.m
+//  FURenderManager.m
 //  FULiveDemo
 //
 //  Created by 刘洋 on 2017/8/18.
 //  Copyright © 2017年 刘洋. All rights reserved.
 //
 
-#import "FUManager.h"
+#import "FURenderManager.h"
 
 #import "authpack.h"
 
 #import "FUTestRecorder.h"
 
-static FUManager *shareManager = NULL;
+static FURenderManager *shareManager = NULL;
 
-@interface FUManager ()
+@interface FURenderManager ()
 
 @property (nonatomic, assign) FUDevicePerformanceLevel devicePerformanceLevel;
 
 @end
 
-@implementation FUManager
+@implementation FURenderManager
 
-+ (FUManager *)shareManager
++ (FURenderManager *)shareManager
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        shareManager = [[FUManager alloc] init];
+        shareManager = [[FURenderManager alloc] init];
     });
 
     return shareManager;

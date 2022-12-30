@@ -6,7 +6,7 @@
 //
 
 #import "FUBeautyShapeModel.h"
-#import "FUManager.h"
+#import "FURenderManager.h"
 
 @implementation FUBeautyShapeModel
 
@@ -143,7 +143,7 @@
                     model.ratio = 1.0;
                     model.isBidirection = YES;
                     // 低性能手机禁用嘴唇厚度
-                    model.disabled = [FUManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
+                    model.disabled = [FURenderManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
                 }
                     break;
                 case FUBeautyShapeItemEyeHeight:{
@@ -154,7 +154,7 @@
                     model.ratio = 1.0;
                     model.isBidirection = YES;
                     // 低性能手机禁用眼睛位置
-                    model.disabled = [FUManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
+                    model.disabled = [FURenderManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
                 }
                     break;
                 case FUBeautyShapeItemCanthus:{
@@ -173,7 +173,7 @@
                     model.ratio = 1.0;
                     model.isBidirection = NO;
                     // 低性能手机禁用眼睑下至
-                    model.disabled = [FUManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
+                    model.disabled = [FURenderManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
                 }
                     break;
                 case FUBeautyShapeItemEyeSpace:{
@@ -228,7 +228,7 @@
                     model.ratio = 1.0;
                     model.isBidirection = YES;
                     // 低性能手机禁用眉毛上下
-                    model.disabled = [FUManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
+                    model.disabled = [FURenderManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
                 }
                     break;
                 case FUBeautyShapeItemBrowSpace:{
@@ -239,7 +239,7 @@
                     model.ratio = 1.0;
                     model.isBidirection = YES;
                     // 低性能手机禁用眉间距
-                    model.disabled = [FUManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
+                    model.disabled = [FURenderManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
                 }
                     break;
                 case FUBeautyShapeItemBrowThick:{
@@ -250,7 +250,7 @@
                     model.ratio = 1.0;
                     model.isBidirection = YES;
                     // 低性能手机禁用眉毛粗细
-                    model.disabled = [FUManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
+                    model.disabled = [FURenderManager shareManager].devicePerformanceLevel != FUDevicePerformanceLevelHigh;
                 }
                     break;
             }

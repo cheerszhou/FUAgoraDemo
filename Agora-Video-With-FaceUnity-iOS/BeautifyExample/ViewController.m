@@ -21,7 +21,7 @@
 @interface ViewController () <AgoraRtcEngineDelegate, AgoraVideoSourceProtocol>
 
 @property (nonatomic, strong) CapturerManager *capturerManager;
-@property (nonatomic, strong) FUManager *videoFilter;
+@property (nonatomic, strong) FURenderManager *videoFilter;
 @property (nonatomic, strong) VideoProcessingManager *processingManager;
 @property (nonatomic, strong) AgoraRtcEngineKit *rtcEngineKit;
 @property (nonatomic, strong) IBOutlet UIView *localView;
@@ -81,7 +81,7 @@
     self.capturerManager = [[CapturerManager alloc] initWithVideoConfig:videoConfig delegate:self.processingManager];
     
     // add FaceUnity filter and add to process manager
-    self.videoFilter = [FUManager shareManager];
+    self.videoFilter = [FURenderManager shareManager];
     [self.processingManager addVideoFilter:self.videoFilter];
     
     // self.processingManager.enableFilter = NO;
@@ -116,7 +116,7 @@
 
 - (void)dealloc {
     
-    [[FUManager shareManager] destoryItems];
+    [[FURenderManager shareManager] destoryItems];
     [self.capturerManager stopCapture];
     [self.rtcEngineKit leaveChannel:nil];
     [self.rtcEngineKit stopPreview];
@@ -129,7 +129,7 @@
 {
     [self.capturerManager switchCamera];
     
-    [[FUManager shareManager] onCameraChange];
+    [[FURenderManager shareManager] onCameraChange];
     
 }
 
@@ -153,7 +153,7 @@
 }
 
 - (IBAction)backBtnClick:(UIButton *)sender {
-    [[FUManager shareManager] destoryItems];
+    [[FURenderManager shareManager] destoryItems];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
